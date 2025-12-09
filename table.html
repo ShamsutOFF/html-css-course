@@ -33,7 +33,7 @@
         <form action="https://rutube.ru/search/" method="get">
             <label for="search_query">
                 <span>Поиск</span>
-                <input type="search" name="query" id="search_query" placeholder="Поиск на Рутюб">
+                <input type="search" name="query" id="search_query" placeholder="Поиск на Рутюб" required minlength="3">
                 <button type="submit">Найти</button>
             </label>
             <div>
@@ -70,8 +70,41 @@
                 <label for="num">Оценка</label>
                 <input type="number" name="num" id="num" min="1" max="5" step="1" value="3">
             </div>
+            <div>
+                <label for="text">Комментарий</label>
+                <textarea name="text" id="text" rows="10" cols="100" placeholder="Введите текст"></textarea>
+            </div>
         </form>
     </section>
+
+    <main>
+        <section>
+            <h1>Свяжитесь со мной</h1>
+            <form action="#">
+                <div>
+                    <label for="email">Введите email</label>
+                    <input type="email" name="email" id="email" placeholder="Введите E-mail" required>
+                </div>
+                <div>
+                    <label for="telegram">Введите telegram</label>
+                    <input type="text" name="telegram" id="telegram" placeholder="Введите telegram">
+                </div>
+                <div>
+                    <label for="topic">Тема</label>
+                    <select name="topic" id="topic" required>
+                        <option value="courses">Приобретение курсов</option>
+                        <option value="feedback">Обратная связь</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"
+                        placeholder="Введите комментарий"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
 
     <!--     <section>
         <table>
