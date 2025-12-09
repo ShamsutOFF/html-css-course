@@ -10,20 +10,23 @@
 <body>
     <section>
         <form action="/test" method="get">
+            <input type="hidden" name="hidden" value="значение поля">
             <div>
                 <label for="email">Введите email</label>
-                <input type="email" name="text_mame" id="email" placeholder="Логин">
+                <input type="email" name="email" id="email" placeholder="Логин">
             </div>
             <label for="password">Введите Пароль</label>
-            <input type="password" name="text_mame" id="password" placeholder="Пароль">
+            <input type="password" name="password" id="password" placeholder="Пароль">
             <label for="birthDate">Введите дату рождения</label>
-            <input type="date" id="birthDate">
+            <input type="date" id="birthDate" name="birthDate">
             <label for="color">Введите цвет</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
             <label>
                 <span>Число</span>
                 <input type="number" placeholder="Число">
             </label>
+            <button type="submit">Отправить</button>
+            <button type="reset">Сбросить</button>
         </form>
     </section>
 
