@@ -3,76 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
     <title>My table</title>
+    <link
+        rel="stylesheet"
+        href="./styles/style.css"
+    >
 </head>
 
 <body>
     <section>
-        <form action="/test" method="get">
-            <input type="hidden" name="hidden" value="значение поля">
+        <form
+            action="/test"
+            method="get"
+        >
+            <input
+                type="hidden"
+                name="hidden"
+                value="значение поля"
+            >
             <div>
                 <label for="email">Введите email</label>
-                <input type="email" name="email" id="email" placeholder="Логин">
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Логин"
+                >
             </div>
             <label for="password">Введите Пароль</label>
-            <input type="password" name="password" id="password" placeholder="Пароль">
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Пароль"
+            >
             <label for="birthDate">Введите дату рождения</label>
-            <input type="date" id="birthDate" name="birthDate">
+            <input
+                type="date"
+                id="birthDate"
+                name="birthDate"
+            >
             <label for="color">Введите цвет</label>
-            <input type="color" id="color" name="color">
+            <input
+                type="color"
+                id="color"
+                name="color"
+            >
             <label>
                 <span>Число</span>
-                <input type="number" placeholder="Число">
+                <input
+                    type="number"
+                    placeholder="Число"
+                >
             </label>
             <button type="submit">Отправить</button>
             <button type="reset">Сбросить</button>
         </form>
     </section>
     <section>
-        <form action="https://rutube.ru/search/" method="get">
+        <form
+            action="https://rutube.ru/search/"
+            method="get"
+        >
             <label for="search_query">
                 <span>Поиск</span>
-                <input type="search" name="query" id="search_query" placeholder="Поиск на Рутюб" required minlength="3">
+                <input
+                    type="search"
+                    name="query"
+                    id="search_query"
+                    placeholder="Поиск на Рутюб"
+                    required
+                    minlength="3"
+                >
                 <button type="submit">Найти</button>
             </label>
             <div>
                 <label for="agree">Согласен</label>
-                <input type="checkbox" name="agree" id="agree">
+                <input
+                    type="checkbox"
+                    name="agree"
+                    id="agree"
+                >
             </div>
             <div>
                 <label for="all">Поиск повсюду</label>
-                <input type="radio" name="search" id="all" value="all">
+                <input
+                    type="radio"
+                    name="search"
+                    id="all"
+                    value="all"
+                >
             </div>
             <div>
                 <label for="rutube">Поиск в RuTube</label>
-                <input type="radio" name="search" id="rutube" value="rutube">
+                <input
+                    type="radio"
+                    name="search"
+                    id="rutube"
+                    value="rutube"
+                >
             </div>
             <div>
                 <label for="topic">Тематика</label>
-                <select name="topic" id="topic">
+                <select
+                    name="topic"
+                    id="topic"
+                >
                     <option value="1">Все</option>
                     <optgroup label="Популярные">
                         <option value="2">Животные</option>
-                        <option value="3" selected>Разработка</option>
+                        <option
+                            value="3"
+                            selected
+                        >Разработка</option>
                     </optgroup>
                 </select>
             </div>
             <div>
                 <label for="file">Загрузить файл</label>
-                <input type="file" name="file" id="file">
+                <input
+                    type="file"
+                    name="file"
+                    id="file"
+                >
             </div>
             <div>
                 <label for="valume">Громкость</label>
-                <input type="range" name="valume" id="valume" min="0" max="100" step="10">
+                <input
+                    type="range"
+                    name="valume"
+                    id="valume"
+                    min="0"
+                    max="100"
+                    step="10"
+                >
             </div>
             <div>
                 <label for="num">Оценка</label>
-                <input type="number" name="num" id="num" min="1" max="5" step="1" value="3">
+                <input
+                    type="number"
+                    name="num"
+                    id="num"
+                    min="1"
+                    max="5"
+                    step="1"
+                    value="3"
+                >
             </div>
             <div>
                 <label for="text">Комментарий</label>
-                <textarea name="text" id="text" rows="10" cols="100" placeholder="Введите текст"></textarea>
+                <textarea
+                    name="text"
+                    id="text"
+                    rows="10"
+                    cols="100"
+                    placeholder="Введите текст"
+                ></textarea>
             </div>
         </form>
     </section>
@@ -83,23 +173,43 @@
             <form action="#">
                 <div>
                     <label for="email">Введите email</label>
-                    <input type="email" name="email" id="email" placeholder="Введите E-mail" required>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Введите E-mail"
+                        required
+                    >
                 </div>
                 <div>
                     <label for="telegram">Введите telegram</label>
-                    <input type="text" name="telegram" id="telegram" placeholder="Введите telegram">
+                    <input
+                        type="text"
+                        name="telegram"
+                        id="telegram"
+                        placeholder="Введите telegram"
+                    >
                 </div>
                 <div>
                     <label for="topic">Тема</label>
-                    <select name="topic" id="topic" required>
+                    <select
+                        name="topic"
+                        id="topic"
+                        required
+                    >
                         <option value="courses">Приобретение курсов</option>
                         <option value="feedback">Обратная связь</option>
                     </select>
                 </div>
                 <div>
                     <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"
-                        placeholder="Введите комментарий"></textarea>
+                    <textarea
+                        name="comment"
+                        id="comment"
+                        cols="30"
+                        rows="10"
+                        placeholder="Введите комментарий"
+                    ></textarea>
                 </div>
                 <button type="submit">Отправить</button>
             </form>
