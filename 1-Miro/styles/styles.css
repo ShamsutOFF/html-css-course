@@ -1,4 +1,46 @@
+/*Обращение ко всем*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*обращение к элементу по ID*/
 #heroButton {
   background-color: #4262ff;
   color: #fff;
+}
+
+/*Обращение по class*/
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+/*Обращение по типу*/
+/*
+input[type="email"] {
+  background: red;
+}
+*/
+
+h1,
+h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: #050038;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.heroText {
+  color: #050038;
+}
+
+.sectionText {
+  color: #05003899;
 }
