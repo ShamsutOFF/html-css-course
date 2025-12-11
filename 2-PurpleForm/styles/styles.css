@@ -16,6 +16,14 @@ select {
   color: #fafafa;
 }
 
+input:invalid {
+  background: red;
+}
+
+input:valid {
+  background: green;
+}
+
 label {
   color: #afb2bf;
 }
@@ -26,6 +34,8 @@ button {
 }
 
 /*Обращение по типу*/
+/*
 input[type="email"] {
   background: red;
 }
+*/

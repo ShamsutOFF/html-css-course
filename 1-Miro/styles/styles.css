@@ -9,10 +9,34 @@
   color: #fff;
 }
 
+#heroButton:hover {
+  background-color: #122db6;
+}
+
+#heroButton:active {
+  background-color: #071766;
+}
+
+.heroForm input:focus {
+  background-color: aliceblue;
+}
+
+ul li:first-child {
+  color: #4262ff;
+}
+
+ul li:last-child {
+  color: red;
+}
+
 /*Обращение по class*/
 .link {
   color: #4262ff;
   text-decoration: underline;
+}
+
+.link:hover {
+  color: #122db6;
 }
 /*Обращение по типу*/
 /*
