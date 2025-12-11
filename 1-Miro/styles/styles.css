@@ -121,6 +121,10 @@ nav ul {
 }
 
 .sectionList {
-  list-style-type: none;
-  list-style-image: url("../images/done-icon.svg");
+  list-style: none;
+  /*   list-style: url("../images/done-icon.svg"); */
+}
+
+.sectionList li::marker {
+  content: url("../images/done-icon.svg");
 }
