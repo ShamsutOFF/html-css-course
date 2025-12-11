@@ -21,6 +21,30 @@
   background-color: aliceblue;
 }
 
+/*Выбор каждого n элемента. 
+odd-нечетные
+even-четные
+3n-каждый третий
+5-конкретно пятый элемент
+ul li:nth-child(odd) {
+  color: #4262ff;
+}
+*/
+
+/*Добавлет псевдокласс после лемента. before - до
+selection - кастомизирует выделение
+a::after {
+  color: red;
+  content: " ! ";
+}
+*/
+
+/*Выбор всех p которые не являются классом className
+p:not(.className){
+
+}
+*/
+/*
 ul li:first-child {
   color: #4262ff;
 }
@@ -28,6 +52,7 @@ ul li:first-child {
 ul li:last-child {
   color: red;
 }
+*/
 
 /*Обращение по class*/
 .link {
@@ -89,4 +114,13 @@ header a {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.sectionList {
+  list-style-type: none;
+  list-style-image: url("../images/done-icon.svg");
 }
