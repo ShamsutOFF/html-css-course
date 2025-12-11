@@ -44,3 +44,25 @@ p {
 .sectionText {
   color: #05003899;
 }
+
+/*Обращение к прямому потомку только
+header > a
+*/
+
+/*Обращение к дочерним элементам*/
+header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Указатель на соседний элемент (на p который идет за формой heroForm)*/
+.heroForm + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
