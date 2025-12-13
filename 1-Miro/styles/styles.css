@@ -3,72 +3,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*обращение к элементу по ID*/
-#heroButton {
-  background-color: #4262ff;
-  color: #fff;
+body {
+  margin: 0;
 }
 
-#heroButton:hover {
-  background-color: #122db6;
+h1 {
+  margin: 0 0 17px 0;
 }
 
-#heroButton:active {
-  background-color: #071766;
+h2 {
+  margin: 0 0 19px 0;
 }
-
-.heroForm input:focus {
-  background-color: aliceblue;
-}
-
-/*Выбор каждого n элемента. 
-odd-нечетные
-even-четные
-3n-каждый третий
-5-конкретно пятый элемент
-ul li:nth-child(odd) {
-  color: #4262ff;
-}
-*/
-
-/*Добавлет псевдокласс после лемента. before - до
-selection - кастомизирует выделение
-a::after {
-  color: red;
-  content: " ! ";
-}
-*/
-
-/*Выбор всех p которые не являются классом className
-p:not(.className){
-
-}
-*/
-/*
-ul li:first-child {
-  color: #4262ff;
-}
-
-ul li:last-child {
-  color: red;
-}
-*/
-
-/*Обращение по class*/
-.link {
-  color: #4262ff;
-  text-decoration: underline;
-}
-
-.link:hover {
-  color: #122db6;
-}
-/*Обращение по типу*/
-/*
-input[type="email"] {
-  background: red;
-}
-*/
 
 h1,
 h2 {
@@ -86,14 +31,6 @@ p {
   letter-spacing: 0%;
 }
 
-.heroText {
-  color: #050038;
-}
-
-.sectionText {
-  color: #05003899;
-}
-
 /*Обращение к прямому потомку только
 header > a
 */
@@ -108,16 +45,26 @@ header a {
   text-decoration: none;
 }
 
-/*Указатель на соседний элемент (на p который идет за формой heroForm)*/
-.heroForm + p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
+nav {
+  padding: 33px 50px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 60px;
 }
 
 nav ul {
   list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+footer {
+  background: #050038;
+  padding: 47px 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .sectionList {
@@ -127,4 +74,65 @@ nav ul {
 
 .sectionList li::marker {
   content: url("../images/done-icon.svg");
+}
+
+/*обращение к элементу по ID*/
+#heroButton {
+  background-color: #4262ff;
+  color: #fff;
+}
+
+#heroButton:hover {
+  background-color: #122db6;
+}
+
+#heroButton:active {
+  background-color: #071766;
+}
+
+.heroForm input {
+  height: 38px;
+  border-radius: 32px;
+  border: 1px solid #9b99af;
+  padding: 5px 10px;
+}
+
+.heroForm button {
+  height: 48px;
+  border-radius: 32px;
+  border: 1px solid #4262ff;
+  padding: 10px 20px;
+}
+
+.heroForm input:focus {
+  background-color: aliceblue;
+}
+
+.heroText {
+  color: #050038;
+  margin: 0 0 55px 0;
+}
+
+.sectionText {
+  color: #05003899;
+  margin: 0 40px 0 0;
+}
+
+/*Указатель на соседний элемент (на p который идет за формой heroForm)*/
+.heroForm + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #050038;
+  margin: 8px 0 52px 0;
+}
+
+/*Обращение по class*/
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #122db6;
 }

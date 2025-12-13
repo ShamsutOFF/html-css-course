@@ -39,3 +39,36 @@ input[type="email"] {
   background: red;
 }
 */
+
+/*Выбор каждого n элемента. 
+odd-нечетные
+even-четные
+3n-каждый третий
+5-конкретно пятый элемент
+ul li:nth-child(odd) {
+  color: #4262ff;
+}
+*/
+
+/*Добавлет псевдокласс после лемента. before - до
+selection - кастомизирует выделение
+a::after {
+  color: red;
+  content: " ! ";
+}
+*/
+
+/*Выбор всех p которые не являются классом className
+p:not(.className){
+
+}
+*/
+/*
+ul li:first-child {
+  color: #4262ff;
+}
+
+ul li:last-child {
+  color: red;
+}
+*/
