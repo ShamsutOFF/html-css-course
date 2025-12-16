@@ -34,27 +34,32 @@ p {
 /*Обращение к прямому потомку только
 header > a
 */
-
+header {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 60px;
+}
 /*Обращение к дочерним элементам*/
 header a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
-  text-align: center;
+  color: #050038;
   text-decoration: none;
 }
 
 nav {
   padding: 33px 50px;
-  border-bottom: 1px solid #f0f0f0;
   margin-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul {
   list-style: none;
   padding: 0%;
   margin: 0%;
+  display: flex;
+  gap: 34px;
 }
 
 footer {
@@ -67,6 +72,25 @@ footer a {
   text-decoration: none;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-bottom: 200px;
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heroLogos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .sectionList {
   list-style: none;
   /*   list-style: url("../images/done-icon.svg"); */
@@ -76,22 +100,8 @@ footer a {
   content: url("../images/done-icon.svg");
 }
 
-/*обращение к элементу по ID*/
-#heroButton {
-  background-color: #4262ff;
-  color: #fff;
-}
-
-#heroButton:hover {
-  background-color: #122db6;
-}
-
-#heroButton:active {
-  background-color: #071766;
-}
-
 .heroForm input {
-  height: 38px;
+  height: 48px;
   border-radius: 32px;
   border: 1px solid #9b99af;
   padding: 5px 10px;
@@ -135,4 +145,22 @@ footer a {
 
 .link:hover {
   color: #122db6;
+}
+
+#hero {
+  display: flex;
+  gap: 65px;
+}
+/*обращение к элементу по ID*/
+#heroButton {
+  background-color: #4262ff;
+  color: #fff;
+}
+
+#heroButton:hover {
+  background-color: #122db6;
+}
+
+#heroButton:active {
+  background-color: #071766;
 }

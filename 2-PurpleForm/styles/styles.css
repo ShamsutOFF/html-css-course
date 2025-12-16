@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,6 +11,7 @@ main {
   background-color: #1e1f29;
   border-radius: 10px;
   padding: 48px;
+  max-width: 600px;
 }
 
 h1 {
@@ -32,6 +34,7 @@ select {
   padding: 27px 48px 12px;
   border-radius: 10px;
   border: none;
+  width: 100%;
 }
 
 label {
@@ -71,44 +74,5 @@ button {
   position: absolute;
   top: 17px;
   left: 16px;
+  display: none;
 }
-
-/*Обращение по типу*/
-/*
-input[type="email"] {
-  background: red;
-}
-*/
-
-/*Выбор каждого n элемента. 
-odd-нечетные
-even-четные
-3n-каждый третий
-5-конкретно пятый элемент
-ul li:nth-child(odd) {
-  color: #4262ff;
-}
-*/
-
-/*Добавлет псевдокласс после лемента. before - до
-selection - кастомизирует выделение
-a::after {
-  color: red;
-  content: " ! ";
-}
-*/
-
-/*Выбор всех p которые не являются классом className
-p:not(.className){
-
-}
-*/
-/*
-ul li:first-child {
-  color: #4262ff;
-}
-
-ul li:last-child {
-  color: red;
-}
-*/
