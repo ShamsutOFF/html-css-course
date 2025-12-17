@@ -1,78 +1,78 @@
 * {
-  font-family: sans-serif;
-  box-sizing: border-box;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #0f0f14;
+    background-color: #0f0f14;
 }
 
 main {
-  background-color: #1e1f29;
-  border-radius: 10px;
-  padding: 48px;
-  max-width: 600px;
+    background-color: #1e1f29;
+    border-radius: 10px;
+    padding: 48px;
+    max-width: 600px;
 }
 
 h1 {
-  color: #fafafa;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-align: center;
-  margin: 0 0 32px 0;
+    color: #fafafa;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 0 32px 0;
 }
 
 input,
 textarea,
 select {
-  background: #2e2d3d;
-  color: #fafafa;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  padding: 27px 48px 12px;
-  border-radius: 10px;
-  border: none;
-  width: 100%;
+    background: #2e2d3d;
+    color: #fafafa;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 27px 48px 12px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
 }
 
 label {
-  position: absolute;
-  top: 12px;
-  left: 48px;
-  font-size: 12px;
-  line-height: 120%;
-  color: #afb2bf;
+    position: absolute;
+    top: 12px;
+    left: 48px;
+    font-size: 12px;
+    line-height: 120%;
+    color: #afb2bf;
 }
 
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: #4a4863;
-  font-size: 16px;
+    color: #4a4863;
+    font-size: 16px;
 }
 
 button {
-  background-color: #6c38cc;
-  color: #fafafa;
-  border: none;
-  border-radius: 10px;
-  padding: 12px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
-  text-align: center;
+    background-color: #6c38cc;
+    color: #fafafa;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
 }
 
 .field {
-  margin-bottom: 16px;
-  position: relative;
+    margin-bottom: 16px;
+    position: relative;
 }
 
 .field img {
-  position: absolute;
-  top: 17px;
-  left: 16px;
-  display: none;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    display: none;
 }
