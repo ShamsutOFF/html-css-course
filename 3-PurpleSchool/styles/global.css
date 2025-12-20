@@ -21,6 +21,7 @@
     --border-10: 10px;
     --layout-width: 1172px;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -38,6 +39,6 @@ body {
     font-style: normal;
 }
 
-/*a {*/
-/*    text-decoration: none;*/
-/*}*/
+a {
+    text-decoration: none;
+}
