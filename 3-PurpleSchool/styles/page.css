@@ -42,6 +42,11 @@
     display: flex;
     gap: 24px;
     margin-bottom: 32px;
+    overflow-x: auto;
+    margin-left: -24px;
+    padding-left: 24px;
+    margin-right: -24px;
+    scrollbar-width: none;
 }
 
 .courses_wrapper {
